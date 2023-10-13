@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GlakGame.MVVM.Views.MenuView"
+             xmlns:vm="clr-namespace:GlakGame.MVVM.ViewModels"
+             Title=""
+             BackgroundColor="Gray"
+             x:DataType="vm:MenuVM">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="info.png" 
+                     Command="{Binding showDevelopersCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="*, auto, 20, 50, 30, 100, *" Padding="30">
+
+        <Frame Grid.Row="1" HeightRequest="325"
+               WidthRequest="325"
+               CornerRadius="70"
+               HorizontalOptions="Center"
+               IsClippedToBounds="True"
+               Padding="0"
+               BorderColor="Gray"
+               Margin="0,0,0,0">
+            <Image Source="win_image256x256.jpg"/>
+        </Frame>
+
+        <Button  Grid.Row="3" Text="Начать игру" BackgroundColor="DarkGray" TextColor="White" FontSize="22" FontAttributes="Bold" Command="{Binding startGameCommand}"/>
+
+        <VerticalStackLayout Grid.Row="5" HorizontalOptions="Center">
+            <Label Text="Ваш рекорд:" FontSize="24" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="{Binding MaxScore}" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

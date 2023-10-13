@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GlakGame.MVVM.Views.GameView"
+             Title="Игра"
+             xmlns:vm="clr-namespace:GlakGame.MVVM.ViewModels"
+             xmlns:model="clr-namespace:GlakGame.MVVM.Models"
+             BackgroundColor="Gray"
+             x:DataType="vm:GameVM">
+    <Grid RowDefinitions="10, 50, 20, auto, 80, 50, *" Padding="30">
+
+        <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Label Text="Осталось времени:" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" />
+            <Label Text="{Binding GameTimer}" HorizontalOptions="Center" TextColor="White" FontSize="24" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Cards}" Grid.Row="3" VerticalScrollBarVisibility="Never" ItemsLayout="VerticalGrid, 4">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:CardImage">
+                    <Image Source="{Binding ImageUrl}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:GameVM}}, Path=selectImageCommand}"
+                                                  CommandParameter="{Binding .}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <VerticalStackLayout Grid.Row="5" HorizontalOptions="Center">
+            <Label Text="Колво баллов:" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+            <Label Text="{Binding Score}" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
