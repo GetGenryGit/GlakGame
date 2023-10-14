@@ -7,25 +7,28 @@
              xmlns:model="clr-namespace:GlakGame.MVVM.Models"
              BackgroundColor="Gray"
              x:DataType="vm:GameVM">
-    <Grid RowDefinitions="10, 50, 20, auto, 80, 50, *" Padding="30">
+    <Grid RowDefinitions="10, 50, 50, auto, 80, 50, *" Padding="30">
 
         <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center">
             <Label Text="Осталось времени:" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" />
             <Label Text="{Binding GameTimer}" HorizontalOptions="Center" TextColor="White" FontSize="24" FontAttributes="Bold"/>
         </VerticalStackLayout>
 
-        <CollectionView ItemsSource="{Binding Cards}" Grid.Row="3" VerticalScrollBarVisibility="Never" ItemsLayout="VerticalGrid, 4">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:CardImage">
-                    <Image Source="{Binding ImageUrl}">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:GameVM}}, Path=selectImageCommand}"
-                                                  CommandParameter="{Binding .}"/>
-                        </Image.GestureRecognizers>
-                    </Image>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            <CollectionView Grid.Row="3" ItemsSource="{Binding Cards}" ItemsLayout="VerticalGrid, 4">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:CardImage">
+                    <Border StrokeThickness="2" Stroke="Black" Margin="1"  >
+                            <Image Source="{Binding ImageUrl}">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:GameVM}}, Path=selectImageCommand}"
+                      CommandParameter="{Binding .}"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
 
         <VerticalStackLayout Grid.Row="5" HorizontalOptions="Center">
             <Label Text="Колво баллов:" TextColor="White" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"/>

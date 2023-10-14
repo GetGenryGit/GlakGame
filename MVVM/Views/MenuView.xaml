@@ -17,7 +17,6 @@
                WidthRequest="325"
                CornerRadius="70"
                HorizontalOptions="Center"
-               IsClippedToBounds="True"
                Padding="0"
                BorderColor="Gray"
                Margin="0,0,0,0">

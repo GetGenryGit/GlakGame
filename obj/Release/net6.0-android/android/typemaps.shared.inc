@@ -67,63 +67,63 @@ map_aname.12:
 
 	.type	map_aname.13, @object
 map_aname.13:
-	.asciz	"GlakGame"
-	.size	map_aname.13, 9
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	map_aname.13, 37
 
 	.type	map_aname.14, @object
 map_aname.14:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	map_aname.14, 37
+	.asciz	"Microsoft.Maui.Controls.Compatibility"
+	.size	map_aname.14, 38
 
 	.type	map_aname.15, @object
 map_aname.15:
-	.asciz	"Microsoft.Maui.Controls.Compatibility"
-	.size	map_aname.15, 38
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.15, 35
 
 	.type	map_aname.16, @object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
-	.size	map_aname.16, 35
+	.asciz	"Microsoft.Maui.Essentials"
+	.size	map_aname.16, 26
 
 	.type	map_aname.17, @object
 map_aname.17:
-	.asciz	"Microsoft.Maui.Essentials"
-	.size	map_aname.17, 26
+	.asciz	"Microsoft.Maui.Controls"
+	.size	map_aname.17, 24
 
 	.type	map_aname.18, @object
 map_aname.18:
-	.asciz	"Microsoft.Maui.Controls"
-	.size	map_aname.18, 24
+	.asciz	"Mono.Android"
+	.size	map_aname.18, 13
 
 	.type	map_aname.19, @object
 map_aname.19:
-	.asciz	"Mono.Android"
-	.size	map_aname.19, 13
+	.asciz	"Xamarin.KotlinX.Coroutines.Core.Jvm"
+	.size	map_aname.19, 36
 
 	.type	map_aname.20, @object
 map_aname.20:
-	.asciz	"Xamarin.KotlinX.Coroutines.Core.Jvm"
-	.size	map_aname.20, 36
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	map_aname.20, 24
 
 	.type	map_aname.21, @object
 map_aname.21:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	map_aname.21, 24
+	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
+	.size	map_aname.21, 36
 
 	.type	map_aname.22, @object
 map_aname.22:
-	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
-	.size	map_aname.22, 36
+	.asciz	"CommunityToolkit.Maui"
+	.size	map_aname.22, 22
 
 	.type	map_aname.23, @object
 map_aname.23:
-	.asciz	"CommunityToolkit.Maui"
-	.size	map_aname.23, 22
+	.asciz	"Xamarin.AndroidX.CardView"
+	.size	map_aname.23, 26
 
 	.type	map_aname.24, @object
 map_aname.24:
-	.asciz	"Xamarin.AndroidX.CardView"
-	.size	map_aname.24, 26
+	.asciz	"GlakGame"
+	.size	map_aname.24, 9
 
 	.type	map_aname.25, @object
 map_aname.25:

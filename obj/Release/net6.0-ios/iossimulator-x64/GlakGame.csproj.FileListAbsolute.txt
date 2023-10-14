@@ -216,7 +216,6 @@ C:\Users\ilyao\GlakGame\GlakGame\bin\Release\net6.0-ios\iossimulator-x64\libxama
 C:\Users\ilyao\GlakGame\GlakGame\bin\Release\net6.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 C:\Users\ilyao\GlakGame\GlakGame\bin\Release\net6.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Users\ilyao\GlakGame\GlakGame\bin\Release\net6.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\mauisplash.inputs
@@ -267,3 +266,4 @@ C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\refint\
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\GlakGame.pdb
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\GlakGame.genruntimeconfig.cache
 C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\ref\GlakGame.dll
+C:\Users\ilyao\GlakGame\GlakGame\obj\Release\net6.0-ios\iossimulator-x64\build-signature\signature

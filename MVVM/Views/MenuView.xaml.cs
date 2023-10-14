@@ -10,4 +10,5 @@ public partial class MenuView : ContentPage
 
 		this.BindingContext = vm;
 	}
+
 }
